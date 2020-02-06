@@ -1,0 +1,78 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ISSAC</title>
+	<link rel="shortcut icon" href="learning.ico" style="border-radius:50%">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- update the version number as needed -->
+ <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-database.js"></script> 
+	<script src="app.js"></script>
+	<script src="upload.js"></script>
+
+
+</head>
+<style>
+		.button {
+		  background-color: #4CAF50; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.button3 {background-color: #f44336;} /* Red */
+		</style>
+<style>
+
+	.wrap-contact100
+	{
+		text-align: center;
+		border-bottom: 4px;
+	}
+	.input100
+	{
+		width:210px;height:30px
+	}
+
+
+</style>
+<body >
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form action ="" method="post" enctype="multipart/form-data" >
+				<h1 class="contact100-form-title">
+					ISSAC <br>
+					<progress value="0" id="uploader" max="100">0%</progress><br><br>
+				</span>
+
+				
+
+				<label class="label-input100" for="message">LINK </label>
+				<div class="wrap-input100 " data-validate = "Message is required">
+					<textarea class="input100" name="message"style="width:400px;height:50px"  id="rules" placeholder="PASTE LINK"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+                    <br>
+                    <input type="file" id="file1" style="font-size:20px;"multiple="" name="file1" ><br><br> 
+				<div class="container-contact100-form-btn">
+						<button class="button"id="submit_link"type="submit"style="width:200px;height:40px" onclick=" getfile()"name="button">SAVE</button><br>
+						<button class="button button3"id="submit_link"type="submit"style="width:200px;height:40px" onclick=" window.open('see.html','_blank')"name="button">RETRIEVE</button>
+				</div>
+			</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-database.js"></script> 
+	<script src="app.js"></script>
+    <script src="upload.js"></script>
+    <title>ISSAC</title>
+    <head>
+    	
+	<link rel="shortcut icon" href="learning.ico" style="border-radius:50%">
+ </head> 
+    <script>
+     
+var playersRef = firebase.database().ref("Uploads/");
+
+playersRef.on("child_added", function(data, prevChildKey) {
+   var newPlayer = data.val();
+   console.log("Link: " + newPlayer.LINKS);
+   console.log("File: " + newPlayer.FILE);
+   //document.getElementById('output').innerHTML = newPlayer.LINKS;
+   document.write('<mark style="background-color:lightgreen">'+'<a href="'+newPlayer.LINKS+'">'+newPlayer.LINKS+'</a></mark>'+"<br><br>"+'<mark><a href="'+newPlayer.FILE+'">'+newPlayer.FILE+'</a></mark>');
+   document.write("<br><br>");
+   
+
+
+});
+    </script>
+
