@@ -18,7 +18,7 @@ playersRef.on("child_added", function(data, prevChildKey) {
    console.log("Link: " + newPlayer.LINKS);
    console.log("File: " + newPlayer.FILE);
    //document.getElementById('output').innerHTML = newPlayer.LINKS;
-   document.write('<mark style="background-color:lightgreen">'+'<a href="'+newPlayer.LINKS+'">'+newPlayer.LINKS+'</a></mark>'+"<br><br>"+'<mark><a href="'+newPlayer.FILE+'">'+newPlayer.FILE+'</a></mark>');
+     document.write('<mark style="background-color:lightgreen">'+newPlayer.LINKS+'</mark>'+"<br><br>"+'<mark>'+newPlayer.FILE+'</mark>');
    document.write("<br><br>");
    
 
